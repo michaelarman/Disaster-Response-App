@@ -1,5 +1,8 @@
 # Disaster-Response-App
 
+The app is hosted on heroku but note that the model had to be downgraded to fit memory limits, so it isn't as accurate as it could have been.
+https://disaster-response-figure8.herokuapp.com/
+
 ## Instructions
 1. Run the following commands in the project's root directory to set up your database and model.
     - To run the ETL pipeline that cleans data and stores in database
