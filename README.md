@@ -50,7 +50,8 @@ The model created used a MultiOutput Random Forest Classifier which worked well.
 The model isn't ideal for predicting future disasters because it needs more data to be trained on.
 
 The evaluation of the model can be seen below where each segment is it's own category (there are 36 in total)
-```                        precision    recall  f1-score   support
+```                       
+                        precision    recall  f1-score   support
 
                related       0.81      0.97      0.89      3991
                request       0.88      0.42      0.57       869
@@ -92,3 +93,4 @@ infrastructure_related       0.00      0.00      0.00       337
              macro avg       0.62      0.18      0.23     16452
           weighted avg       0.77      0.50      0.54     16452
            samples avg       0.69      0.47      0.51     16452
+```
