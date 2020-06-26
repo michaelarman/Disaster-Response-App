@@ -50,318 +50,45 @@ The model created used a MultiOutput Random Forest Classifier which worked well.
 The model isn't ideal for predicting future disasters because it needs more data to be trained on.
 
 The evaluation of the model can be seen below where each segment is it's own category (there are 36 in total)
-```            precision    recall  f1-score   support
-
-           0       0.72      0.28      0.40      1230
-           1       0.81      0.96      0.88      3981
-           2       0.52      0.36      0.43        33
-
-    accuracy                           0.80      5244
-   macro avg       0.68      0.54      0.57      5244
-weighted avg       0.79      0.80      0.76      5244
-
-              precision    recall  f1-score   support
-
-           0       0.89      0.99      0.94      4371
-           1       0.88      0.40      0.55       873
-
-    accuracy                           0.89      5244
-   macro avg       0.89      0.70      0.75      5244
-weighted avg       0.89      0.89      0.87      5244
-
-              precision    recall  f1-score   support
-
-           0       1.00      1.00      1.00      5227
-           1       0.00      0.00      0.00        17
-
-    accuracy                           1.00      5244
-   macro avg       0.50      0.50      0.50      5244
-weighted avg       0.99      1.00      1.00      5244
-
-              precision    recall  f1-score   support
-
-           0       0.78      0.87      0.82      3127
-           1       0.77      0.64      0.70      2117
-
-    accuracy                           0.78      5244
-   macro avg       0.78      0.76      0.76      5244
-weighted avg       0.78      0.78      0.77      5244
-
-              precision    recall  f1-score   support
-
-           0       0.93      1.00      0.96      4849
-           1       0.60      0.05      0.08       395
-
-    accuracy                           0.93      5244
-   macro avg       0.76      0.52      0.52      5244
-weighted avg       0.90      0.93      0.90      5244
-
-              precision    recall  f1-score   support
-
-           0       0.96      1.00      0.98      4993
-           1       0.79      0.08      0.14       251
-
-    accuracy                           0.95      5244
-   macro avg       0.87      0.54      0.56      5244
-weighted avg       0.95      0.95      0.94      5244
-
-              precision    recall  f1-score   support
-
-           0       0.98      1.00      0.99      5116
-           1       0.78      0.05      0.10       128
-
-    accuracy                           0.98      5244
-   macro avg       0.88      0.53      0.55      5244
-weighted avg       0.97      0.98      0.97      5244
-
-              precision    recall  f1-score   support
-
-           0       0.98      1.00      0.99      5134
-           1       1.00      0.01      0.02       110
-
-    accuracy                           0.98      5244
-   macro avg       0.99      0.50      0.50      5244
-weighted avg       0.98      0.98      0.97      5244
-
-              precision    recall  f1-score   support
-
-           0       0.97      1.00      0.98      5062
-           1       0.83      0.03      0.05       182
-
-    accuracy                           0.97      5244
-   macro avg       0.90      0.51      0.52      5244
-weighted avg       0.96      0.97      0.95      5244
-
-              precision    recall  f1-score   support
-
-           0       0.95      1.00      0.98      4911
-           1       0.91      0.28      0.42       333
-
-    accuracy                           0.95      5244
-   macro avg       0.93      0.64      0.70      5244
-weighted avg       0.95      0.95      0.94      5244
-
-              precision    recall  f1-score   support
-
-           0       0.94      0.99      0.96      4659
-           1       0.86      0.46      0.60       585
-
-    accuracy                           0.93      5244
-   macro avg       0.90      0.73      0.78      5244
-weighted avg       0.93      0.93      0.92      5244
-
-              precision    recall  f1-score   support
-
-           0       0.93      1.00      0.96      4772
-           1       0.91      0.25      0.39       472
-
-    accuracy                           0.93      5244
-   macro avg       0.92      0.62      0.68      5244
-weighted avg       0.93      0.93      0.91      5244
-
-              precision    recall  f1-score   support
-
-           0       0.99      1.00      0.99      5163
-           1       0.71      0.06      0.11        81
-
-    accuracy                           0.99      5244
-   macro avg       0.85      0.53      0.55      5244
-weighted avg       0.98      0.99      0.98      5244
-
-              precision    recall  f1-score   support
-
-           0       0.98      1.00      0.99      5129
-           1       0.50      0.01      0.02       115
-
-    accuracy                           0.98      5244
-   macro avg       0.74      0.50      0.50      5244
-weighted avg       0.97      0.98      0.97      5244
-
-              precision    recall  f1-score   support
-
-           0       0.99      1.00      0.99      5186
-           1       1.00      0.02      0.03        58
-
-    accuracy                           0.99      5244
-   macro avg       0.99      0.51      0.51      5244
-weighted avg       0.99      0.99      0.98      5244
-
-              precision    recall  f1-score   support
-
-           0       0.96      1.00      0.98      5052
-           1       0.40      0.01      0.02       192
-
-    accuracy                           0.96      5244
-   macro avg       0.68      0.50      0.50      5244
-weighted avg       0.94      0.96      0.95      5244
-
-              precision    recall  f1-score   support
-
-           0       0.96      1.00      0.98      5013
-           1       0.90      0.12      0.21       231
-
-    accuracy                           0.96      5244
-   macro avg       0.93      0.56      0.59      5244
-weighted avg       0.96      0.96      0.95      5244
-
-              precision    recall  f1-score   support
-
-           0       0.87      1.00      0.93      4566
-           1       0.82      0.01      0.03       678
-
-    accuracy                           0.87      5244
-   macro avg       0.85      0.51      0.48      5244
-weighted avg       0.87      0.87      0.81      5244
-
-              precision    recall  f1-score   support
-
-           0       0.94      1.00      0.97      4938
-           1       0.00      0.00      0.00       306
-
-    accuracy                           0.94      5244
-   macro avg       0.47      0.50      0.48      5244
-weighted avg       0.89      0.94      0.91      5244
-
-              precision    recall  f1-score   support
-
-           0       0.96      1.00      0.98      5019
-           1       0.88      0.06      0.12       225
-
-    accuracy                           0.96      5244
-   macro avg       0.92      0.53      0.55      5244
-weighted avg       0.96      0.96      0.94      5244
-
-              precision    recall  f1-score   support
-
-           0       0.95      1.00      0.97      4964
-           1       0.82      0.05      0.09       280
-
-    accuracy                           0.95      5244
-   macro avg       0.89      0.52      0.53      5244
-weighted avg       0.94      0.95      0.93      5244
-
-              precision    recall  f1-score   support
-
-           0       0.98      1.00      0.99      5146
-           1       0.75      0.03      0.06        98
-
-    accuracy                           0.98      5244
-   macro avg       0.87      0.52      0.52      5244
-weighted avg       0.98      0.98      0.97      5244
-
-              precision    recall  f1-score   support
-
-           0       0.99      1.00      1.00      5211
-           1       0.00      0.00      0.00        33
-
-    accuracy                           0.99      5244
-   macro avg       0.50      0.50      0.50      5244
-weighted avg       0.99      0.99      0.99      5244
-
-              precision    recall  f1-score   support
-
-           0       0.99      1.00      0.99      5189
-           1       0.00      0.00      0.00        55
-
-    accuracy                           0.99      5244
-   macro avg       0.49      0.50      0.50      5244
-weighted avg       0.98      0.99      0.98      5244
-
-              precision    recall  f1-score   support
-
-           0       0.99      1.00      1.00      5211
-           1       0.00      0.00      0.00        33
-
-    accuracy                           0.99      5244
-   macro avg       0.50      0.50      0.50      5244
-weighted avg       0.99      0.99      0.99      5244
-
-              precision    recall  f1-score   support
-
-           0       0.99      1.00      0.99      5190
-           1       0.00      0.00      0.00        54
-
-    accuracy                           0.99      5244
-   macro avg       0.49      0.50      0.50      5244
-weighted avg       0.98      0.99      0.98      5244
-
-              precision    recall  f1-score   support
-
-           0       0.96      1.00      0.98      5041
-           1       0.00      0.00      0.00       203
-
-    accuracy                           0.96      5244
-   macro avg       0.48      0.50      0.49      5244
-weighted avg       0.92      0.96      0.94      5244
-
-              precision    recall  f1-score   support
-
-           0       0.87      0.96      0.91      3812
-           1       0.86      0.62      0.72      1432
-
-    accuracy                           0.87      5244
-   macro avg       0.87      0.79      0.82      5244
-weighted avg       0.87      0.87      0.86      5244
-
-              precision    recall  f1-score   support
-
-           0       0.95      0.99      0.97      4828
-           1       0.86      0.38      0.53       416
-
-    accuracy                           0.95      5244
-   macro avg       0.91      0.69      0.75      5244
-weighted avg       0.94      0.95      0.94      5244
-
-              precision    recall  f1-score   support
-
-           0       0.95      0.99      0.97      4773
-           1       0.78      0.45      0.57       471
-
-    accuracy                           0.94      5244
-   macro avg       0.86      0.72      0.77      5244
-weighted avg       0.93      0.94      0.93      5244
-
-              precision    recall  f1-score   support
-
-           0       0.99      1.00      0.99      5181
-           1       0.00      0.00      0.00        63
-
-    accuracy                           0.99      5244
-   macro avg       0.49      0.50      0.50      5244
-weighted avg       0.98      0.99      0.98      5244
-
-              precision    recall  f1-score   support
-
-           0       0.98      0.99      0.98      4766
-           1       0.89      0.75      0.82       478
-
-    accuracy                           0.97      5244
-   macro avg       0.93      0.87      0.90      5244
-weighted avg       0.97      0.97      0.97      5244
-
-              precision    recall  f1-score   support
-
-           0       0.98      1.00      0.99      5140
-           1       0.86      0.06      0.11       104
-
-    accuracy                           0.98      5244
-   macro avg       0.92      0.53      0.55      5244
-weighted avg       0.98      0.98      0.97      5244
-
-              precision    recall  f1-score   support
-
-           0       0.95      1.00      0.97      4966
-           1       0.50      0.02      0.04       278
-
-    accuracy                           0.95      5244
-   macro avg       0.72      0.51      0.51      5244
-weighted avg       0.92      0.95      0.92      5244
-
-              precision    recall  f1-score   support
-
-           0       0.87      0.99      0.92      4252
-           1       0.86      0.34      0.49       992
-
-    accuracy                           0.87      5244
-   macro avg       0.86      0.67      0.71      5244
-weighted avg       0.87      0.87      0.84      5244
+```                        precision    recall  f1-score   support
+
+               related       0.81      0.97      0.89      3991
+               request       0.88      0.42      0.57       869
+                 offer       0.00      0.00      0.00        24
+           aid_related       0.76      0.63      0.69      2149
+          medical_help       0.60      0.06      0.11       393
+      medical_products       0.72      0.05      0.10       242
+     search_and_rescue       0.83      0.04      0.07       132
+              security       1.00      0.01      0.02       113
+              military       0.75      0.05      0.10       177
+                 water       0.86      0.29      0.43       302
+                  food       0.87      0.46      0.60       549
+               shelter       0.88      0.26      0.40       433
+              clothing       0.83      0.06      0.11        84
+                 money       0.80      0.03      0.07       117
+        missing_people       0.00      0.00      0.00        70
+              refugees       0.50      0.01      0.02       169
+                 death       0.88      0.12      0.21       236
+             other_aid       0.62      0.01      0.03       698
+infrastructure_related       0.00      0.00      0.00       337
+             transport       0.88      0.06      0.11       228
+             buildings       0.83      0.06      0.11       256
+           electricity       0.80      0.04      0.07       103
+                 tools       0.00      0.00      0.00        35
+             hospitals       0.00      0.00      0.00        53
+                 shops       0.00      0.00      0.00        21
+           aid_centers       0.00      0.00      0.00        62
+  other_infrastructure       0.00      0.00      0.00       235
+       weather_related       0.87      0.62      0.72      1497
+                floods       0.95      0.36      0.52       450
+                 storm       0.80      0.39      0.53       523
+                  fire       0.50      0.02      0.04        44
+            earthquake       0.91      0.76      0.83       491
+                  cold       0.90      0.08      0.16       106
+         other_weather       0.78      0.03      0.05       280
+         direct_report       0.86      0.35      0.50       983
+
+             micro avg       0.82      0.50      0.62     16452
+             macro avg       0.62      0.18      0.23     16452
+          weighted avg       0.77      0.50      0.54     16452
+           samples avg       0.69      0.47      0.51     16452
