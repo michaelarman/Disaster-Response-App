@@ -4,6 +4,7 @@ The app is hosted on heroku but note that the model had to be downgraded to fit 
 https://disaster-response-figure8.herokuapp.com/
 
 ## Instructions
+To deploy locally:
 1. Run the following commands in the project's root directory to set up your database and model.
     - To run the ETL pipeline that cleans data and stores in database
   `python data/process_data.py data/disaster_messages.csv data/disaster_categories.csv data/DisasterResponse.db`
