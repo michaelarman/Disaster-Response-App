@@ -52,6 +52,8 @@ def clean_data(df):
     df['message'] = df['message'].str.lower()
     # remove punctuation and not stop words since we can configure that in the tfidf
     df['message'] = df['message'].str.translate(str.maketrans('', '', string.punctuation))
+    # after inspecting the dataframe, we see that related is not binary so we need to convert the 2's into 1's
+    df.loc[df['related'] == 2, 'related'] = 1
     
     return df
 
